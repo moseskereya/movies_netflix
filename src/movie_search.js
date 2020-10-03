@@ -16,7 +16,7 @@ class searches extends Component {
         e.preventDefault();
         const q = this.state.title;
         const api_key = "fa1875db1f08a7d5f9887db721a0a94e";
-        axios.get(`http://api.themoviedb.org/3/search/movie?&api_key=${api_key}&query=${q}`)
+        axios.get(`https://api.themoviedb.org/3/search/movie?&api_key=${api_key}&query=${q}`)
             .then(response => {
                 console.log(response.data.results)
                 dispatch({
