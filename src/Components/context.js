@@ -30,7 +30,7 @@ export class Provider extends Component {
 
     componentDidMount() {
         const api_key = "fa1875db1f08a7d5f9887db721a0a94e";
-        const base_url = "http://api.themoviedb.org/3"
+        const base_url = "https://api.themoviedb.org/3"
 
         const Action = `discover/movie?api_key=${api_key}&with_genres=28`;
         const TopRate = `movie/top_rated?api_key=${api_key}&language=en-US`;
