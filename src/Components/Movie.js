@@ -24,13 +24,18 @@ class Movie extends Component {
                                     {Action.map(trend => {
                                         return (
                                             <div key={trend.id} className="movies_items">
-                                                <Link to={
-                                                    {
-                                                        pathname: `/Movie/${trend.id}`,
-                                                        state: { movie: trend.id }
-                                                    }}>
-                                                    <img src={`${baseUrl}/${trend.backdrop_path}`} alt="movie_img" />
-                                                </Link>
+                                            <div class="box">
+                                                  <div class="imgBox">
+                                                        <Link to={
+                                                            {
+                                                                pathname: `/Movie/${trend.id}`,
+                                                                state: { movie: trend.id }
+                                                            }}>
+                                                            <img src={`${baseUrl}/${trend.backdrop_path}`} alt="movie_img" />
+                                                        </Link>
+                                                </div>
+                                                </div>
+                                            
                                                 <h4>{trend.title || trend.original_name}</h4>
                                                 <div>
                                                     <span className="star">
@@ -48,13 +53,18 @@ class Movie extends Component {
                                     {NetFlix.map(trend => {
                                         return (
                                             <div key={trend.id} className="movies_items">
-                                                <Link to={
-                                                    {
-                                                        pathname: `/Movie/${trend.id}`,
-                                                        state: { movie: trend.id }
-                                                    }}>
-                                                    <img src={`${baseUrl}/${trend.backdrop_path}`} alt="movie_img" />
-                                                </Link>
+                                                <div class="box">
+                                                    <div class="imgBox">
+                                                        <Link to={
+                                                            {
+                                                                pathname: `/Movie/${trend.id}`,
+                                                                state: { movie: trend.id }
+                                                            }}>
+                                                            <img src={`${baseUrl}/${trend.backdrop_path}`} alt="movie_img" />
+                                                        </Link>
+                                                    </div>
+                                                </div>
+
                                                 <h4>{trend.title || trend.original_name}</h4>
                                                 <div>
                                                     <span className="star">
@@ -72,13 +82,18 @@ class Movie extends Component {
                                     {Trending.map(trend => {
                                         return (
                                             <div key={trend.id} className="movies_items">
-                                                <Link to={
-                                                    {
-                                                        pathname: `/Movie/${trend.id}`,
-                                                        state: { movie: trend.id }
-                                                    }}>
-                                                    <img src={`${baseUrl}/${trend.backdrop_path}`} alt="movie_img" />
-                                                </Link>
+                                                <div class="box">
+                                                    <div class="imgBox">
+                                                        <Link to={
+                                                            {
+                                                                pathname: `/Movie/${trend.id}`,
+                                                                state: { movie: trend.id }
+                                                            }}>
+                                                            <img src={`${baseUrl}/${trend.backdrop_path}`} alt="movie_img" />
+                                                        </Link>
+                                                    </div>
+                                                </div>
+
                                                 <h4>{trend.title || trend.original_name}</h4>
                                                 <div>
                                                     <span className="star">
@@ -96,13 +111,18 @@ class Movie extends Component {
                                     {Rated.map(trend => {
                                         return (
                                             <div key={trend.id} className="movies_items">
-                                                <Link to={
-                                                    {
-                                                        pathname: `/Movie/${trend.id}`,
-                                                        state: { movie: trend.id }
-                                                    }}>
-                                                    <img src={`${baseUrl}/${trend.backdrop_path}`} alt="movie_img" />
-                                                </Link>
+                                                <div class="box">
+                                                    <div class="imgBox">
+                                                        <Link to={
+                                                            {
+                                                                pathname: `/Movie/${trend.id}`,
+                                                                state: { movie: trend.id }
+                                                            }}>
+                                                            <img src={`${baseUrl}/${trend.backdrop_path}`} alt="movie_img" />
+                                                        </Link>
+                                                    </div>
+                                                </div>
+
                                                 <h4>{trend.title || trend.original_name}</h4>
                                                 <div>
                                                     <span className="star">
@@ -121,13 +141,18 @@ class Movie extends Component {
                                     {Comedy.map(trend => {
                                         return (
                                             <div key={trend.id} className="movies_items">
-                                                <Link to={
-                                                    {
-                                                        pathname: `/Movie/${trend.id}`,
-                                                        state: { movie: trend.id }
-                                                    }}>
-                                                    <img src={`${baseUrl}/${trend.backdrop_path}`} alt="movie_img" />
-                                                </Link>
+                                                <div class="box">
+                                                    <div class="imgBox">
+                                                        <Link to={
+                                                            {
+                                                                pathname: `/Movie/${trend.id}`,
+                                                                state: { movie: trend.id }
+                                                            }}>
+                                                            <img src={`${baseUrl}/${trend.backdrop_path}`} alt="movie_img" />
+                                                        </Link>
+                                                    </div>
+                                                </div>
+
                                                 <h4>{trend.title || trend.original_name}</h4>
                                                 <div>
                                                     <span className="star">
@@ -146,13 +171,18 @@ class Movie extends Component {
                                     {Romantic.map(trend => {
                                         return (
                                             <div key={trend.id} className="movies_items">
-                                                <Link to={
-                                                    {
-                                                        pathname: `/Movie/${trend.id}`,
-                                                        state: { movie: trend.id }
-                                                    }}>
-                                                    <img src={`${baseUrl}/${trend.backdrop_path}`} alt="movie_img" />
-                                                </Link>
+                                                <div class="box">
+                                                    <div class="imgBox">
+                                                        <Link to={
+                                                            {
+                                                                pathname: `/Movie/${trend.id}`,
+                                                                state: { movie: trend.id }
+                                                            }}>
+                                                            <img src={`${baseUrl}/${trend.backdrop_path}`} alt="movie_img" />
+                                                        </Link>
+                                                    </div>
+                                                </div>
+
                                                 <h4>{trend.title || trend.original_name}</h4>
                                                 <div>
                                                     <span className="star">
@@ -171,13 +201,18 @@ class Movie extends Component {
                                     {Documentary.map(trend => {
                                         return (
                                             <div key={trend.id} className="movies_items">
-                                                <Link to={
-                                                    {
-                                                        pathname: `/Movie/${trend.id}`,
-                                                        state: { items: trend.id }
-                                                    }}>
-                                                    <img src={`${baseUrl}/${trend.backdrop_path}`} alt="movie_img" />
-                                                </Link>
+                                                <div class="box">
+                                                    <div class="imgBox">
+                                                        <Link to={
+                                                            {
+                                                                pathname: `/Movie/${trend.id}`,
+                                                                state: { movie: trend.id }
+                                                            }}>
+                                                            <img src={`${baseUrl}/${trend.backdrop_path}`} alt="movie_img" />
+                                                        </Link>
+                                                    </div>
+                                                </div>
+
                                                 <h4>{trend.title || trend.original_name}</h4>
                                                 <div>
                                                     <span className="star">
@@ -196,13 +231,18 @@ class Movie extends Component {
                                     {Horos.map(trend => {
                                         return (
                                             <div key={trend.id} className="movies_items">
-                                                <Link to={
-                                                    {
-                                                        pathname: `/Movie/${trend.id}`,
-                                                        state: { items: trend.id }
-                                                    }}>
-                                                    <img src={`${baseUrl}/${trend.backdrop_path}`} alt="movie_img" />
-                                                </Link>
+                                                <div class="box">
+                                                    <div class="imgBox">
+                                                        <Link to={
+                                                            {
+                                                                pathname: `/Movie/${trend.id}`,
+                                                                state: { movie: trend.id }
+                                                            }}>
+                                                            <img src={`${baseUrl}/${trend.backdrop_path}`} alt="movie_img" />
+                                                        </Link>
+                                                    </div>
+                                                </div>
+
                                                 <h4>{trend.title || trend.original_name}</h4>
                                                 <div>
                                                     <span className="star">

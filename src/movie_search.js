@@ -45,6 +45,7 @@ class searches extends Component {
                                     placeholder="Search movies"
                                     onChange={this.onChange}
                                 />
+                                <button type="submit" className="search_now">search</button>
                             </form>
                         </div>
                     );

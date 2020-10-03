@@ -33,7 +33,7 @@ html {
     font-family: var(--main-font);
     font-size: 14px;
     color: var(--main-color);
-    background-color:#2a2b31;
+    background-color:#25222e;
     scroll-behavior: smooth;
 }
 
@@ -107,13 +107,30 @@ nav ul li{
 .movies{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    margin: 10px;
+    justify-content: center;
+    margin: 0 10px;
 }
-.movies_items{
+
+.movies_items .box{
     margin: 5px auto;
     max-width: 350px;
+    position:relative;
+    margin: 0 6px;
+    height:400px;
+    box-sizing:border-box;
 }
+  .movies_items .box .imgBox img{
+    width: 100%;
+    transition:transform 2s;
+  }
+  .movies_items .box:hover .imgBox img{
+   transform:scale(1.2);
+  }
+
+  .movies_items .box .imgBox{
+    position:relative;
+    overflow:hidden;
+  }
 .movies_items img{
     object-fit: cover;
     cursor: pointer;
@@ -181,6 +198,20 @@ span{
     text-decoration: none;
     color: rgb(255, 255, 255);
     
+}
+.search_now{
+    padding: 6px 8px;
+    margin: 0 3px;
+    transition: .5s ease-in-out;
+    background-color: orange;
+    border-radius: 1px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+.search_now:hover{
+    background-color:red;
+    color: #fff;
 }
 .play:hover{
     border:none;
@@ -251,6 +282,10 @@ grid-template-columns:repeat(2, 1fr);
     }
     .logo-2 {
         margin-left: 6rem;
+        display: none;
+    }
+    .logo{
+        display: none;
     }
     .view-detail1 img{
     width: 100%;
@@ -262,12 +297,12 @@ grid-template-columns:repeat(2, 1fr);
 @media screen and (max-width: 500px){
     nav{
       display: flex;
-      flex-direction: column-reverse;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
     }
     .search input{
-        width: 35%;
+        width: 60%;
         margin:1.3rem 0;
     }
     .logo-2{
@@ -366,31 +401,6 @@ grid-template-columns:repeat(2, 1fr);
     background-color: #2a2b31;
 }
 
-@media screen and (max-width: 500px){
-    nav{
-      display: flex;
-      flex-direction: column-reverse;
-      justify-content: center;
-      align-items: center;
-    }
-    .search input{
-        width: 100%;
-        margin:1.3rem 0;
-    }
-    .logo-2{
-        margin-top: 1rem;
-        margin-left: 0;
-    }
-      .movies_items{
-        max-width: 90%;
-    }
-    nav ul li{
-        padding: .5rem 0;
-    }
-    .btn{
-        padding: 4px;
-    }
-}
 
 @media (max-width: 960px) {
 	.showcase {
@@ -465,6 +475,6 @@ grid-template-columns:repeat(2, 1fr);
 
 @media(max-height: 600px) {
   .showcase-content {
-	margin-top: 3rem;
+    margin-top: 3rem;
 }
 }

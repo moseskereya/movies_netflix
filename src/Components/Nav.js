@@ -20,9 +20,6 @@ class Nav extends Component {
                         <Link className="link" to="/">Home</Link>
                     </li>
                     <li>
-                        <Link className="link" to="/Movies">Movies</Link>
-                    </li>
-                    <li>
                         <Link className="link" to="/Shows">TV Shows</Link>
                     </li>
                 </ul>
