@@ -9,8 +9,8 @@ class Banner extends Component {
         return (
             <header className="showcase">
                 <div className="showcase-top">
-                    <img src="http://i.ibb.co/r5krrdz/logo.png" alt="" />
-                    <a href="http://www.netflix.com/tz-en/login" class="btn btn-rounded">Sign In</a>
+                    <img src="https://i.ibb.co/r5krrdz/logo.png" alt="" />
+                    <a href="https://www.netflix.com/tz-en/login" class="btn btn-rounded">Sign In</a>
                 </div>
                 <div className="showcase-content">
                     <h1>See what's next</h1>
