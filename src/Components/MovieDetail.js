@@ -38,8 +38,7 @@ class MovieDetail extends Component {
                         <div className="view-detail2">
                             <h1 className="title">{data.title}</h1>
                             <span className="star">
-                                Rating
-                        <i class="far fa-star"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
                             </span>
 
                             <span>
@@ -87,12 +86,15 @@ class MovieDetail extends Component {
                     <div className="movies">
                         {data.credits.cast.map(trend => {
                             return (
-                                <div key={trend.id} className="movies_items">
-                                    <img src={`${baseUrl}/${trend.profile_path}`} alt="character" />
-
-                                    <h4 className="name">Name : {trend.name}</h4>
-                                    <h4 className="name">Character : {trend.character}</h4>
+                                <div className="movies_items"> 
+                                <div class="box">
+                                    <div class="imgBox">
+                                        <img src={`${baseUrl}/${trend.profile_path}`} alt="movie_img" />
+                                    </div>
+                                        <h4>{trend.name}</h4>
+                                        <h4>{trend.character}</h4>
                                 </div>
+                             </div>
                             )
                         })}
                     </div>
@@ -100,9 +102,13 @@ class MovieDetail extends Component {
                     <div className="movies">
                         {data.images.backdrops.map(trend => {
                             return (
-                                <div key={trend.id} className="movies_items">
-                                    <img src={`${baseUrl}/${trend.file_path}`} alt="movie_images" />
+                                <div className="movies_items">
+                                <div class="box">
+                                    <div class="imgBox">
+                                        <img src={`${baseUrl}/${trend.file_path}`} alt="movie_img" />
                                 </div>
+                             </div>
+                         </div>
                             )
                         })}
                     </div>
