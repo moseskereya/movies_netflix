@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import MovieSearch from "../movie_search"
 import { Consumer } from "./context"
 import Spinner from "./Spinner"
 class Movie extends Component {
@@ -19,13 +20,16 @@ class Movie extends Component {
                     } else {
                         return (
                             <React.Fragment>
-                                <h2 className="collection_title">Action Movies</h2>
+                                <div className="front_view">
+                                    <h2 className="collection_title">Action Movies</h2>
+                                    <MovieSearch />
+                                </div>
                                 <div className="movies">
                                     {Action.map(trend => {
                                         return (
                                             <div key={trend.id} className="movies_items">
-                                            <div class="box">
-                                                  <div class="imgBox">
+                                                <div class="box">
+                                                    <div class="imgBox">
                                                         <Link to={
                                                             {
                                                                 pathname: `/Movie/${trend.id}`,
@@ -33,16 +37,15 @@ class Movie extends Component {
                                                             }}>
                                                             <img src={`${baseUrl}/${trend.backdrop_path}`} alt="movie_img" />
                                                         </Link>
+                                                    </div>
                                                 </div>
-                                                </div>
-                                            
                                                 <h4>{trend.title || trend.original_name}</h4>
-                                                <div>
-                                                    <span className="star">
+                                                <div className="movie_details">
+                                                    <code className="star">
                                                         <i class="fa fa-star" aria-hidden="true"></i>
-                                                    </span>
-                                                    <span>{trend.vote_average * 10} % </span>
-                                                    <span>{trend.release_date}</span>
+                                                    </code>
+                                                    <p>Rating : {trend.vote_average * 10} % </p>
+                                                    <span>Release Date : {trend.release_date}</span>
                                                 </div>
                                             </div>
                                         )
@@ -66,12 +69,12 @@ class Movie extends Component {
                                                 </div>
 
                                                 <h4>{trend.title || trend.original_name}</h4>
-                                                <div>
-                                                    <span className="star">
+                                                <div className="movie_details">
+                                                    <code className="star">
                                                         <i class="fa fa-star" aria-hidden="true"></i>
-                                                    </span>
-                                                    <span>{trend.vote_average * 10} % </span>
-                                                    <span>{trend.release_date}</span>
+                                                    </code>
+                                                    <p>Rating : {trend.vote_average * 10} % </p>
+                                                    <span>Release Date : {trend.release_date}</span>
                                                 </div>
                                             </div>
                                         )
@@ -95,12 +98,12 @@ class Movie extends Component {
                                                 </div>
 
                                                 <h4>{trend.title || trend.original_name}</h4>
-                                                <div>
-                                                    <span className="star">
+                                                <div className="movie_details">
+                                                    <code className="star">
                                                         <i class="fa fa-star" aria-hidden="true"></i>
-                                                    </span>
-                                                    <span>{trend.vote_average * 10} % </span>
-                                                    <span>{trend.release_date}</span>
+                                                    </code>
+                                                    <p>Rating : {trend.vote_average * 10} % </p>
+                                                    <span>Release Date : {trend.release_date}</span>
                                                 </div>
                                             </div>
                                         )
@@ -124,12 +127,12 @@ class Movie extends Component {
                                                 </div>
 
                                                 <h4>{trend.title || trend.original_name}</h4>
-                                                <div>
-                                                    <span className="star">
+                                                <div className="movie_details">
+                                                    <code className="star">
                                                         <i class="fa fa-star" aria-hidden="true"></i>
-                                                    </span>
-                                                    <span>{trend.vote_average * 10} % </span>
-                                                    <span>{trend.release_date}</span>
+                                                    </code>
+                                                    <p>Rating : {trend.vote_average * 10} % </p>
+                                                    <span>Release Date : {trend.release_date}</span>
                                                 </div>
                                             </div>
                                         )
@@ -154,12 +157,12 @@ class Movie extends Component {
                                                 </div>
 
                                                 <h4>{trend.title || trend.original_name}</h4>
-                                                <div>
-                                                    <span className="star">
+                                                <div className="movie_details">
+                                                    <code className="star">
                                                         <i class="fa fa-star" aria-hidden="true"></i>
-                                                    </span>
-                                                    <span>{trend.vote_average * 10} % </span>
-                                                    <span>{trend.release_date}</span>
+                                                    </code>
+                                                    <p>Rating : {trend.vote_average * 10} % </p>
+                                                    <span>Release Date : {trend.release_date}</span>
                                                 </div>
                                             </div>
                                         )
@@ -184,12 +187,12 @@ class Movie extends Component {
                                                 </div>
 
                                                 <h4>{trend.title || trend.original_name}</h4>
-                                                <div>
-                                                    <span className="star">
+                                                <div className="movie_details">
+                                                    <code className="star">
                                                         <i class="fa fa-star" aria-hidden="true"></i>
-                                                    </span>
-                                                    <span>{trend.vote_average * 10} % </span>
-                                                    <span>{trend.release_date}</span>
+                                                    </code>
+                                                    <p>Rating : {trend.vote_average * 10} % </p>
+                                                    <span>Release Date : {trend.release_date}</span>
                                                 </div>
                                             </div>
                                         )
@@ -214,12 +217,12 @@ class Movie extends Component {
                                                 </div>
 
                                                 <h4>{trend.title || trend.original_name}</h4>
-                                                <div>
-                                                    <span className="star">
+                                                <div className="movie_details">
+                                                    <code className="star">
                                                         <i class="fa fa-star" aria-hidden="true"></i>
-                                                    </span>
-                                                    <span>{trend.vote_average * 10} % </span>
-                                                    <span>{trend.release_date}</span>
+                                                    </code>
+                                                    <p>Rating : {trend.vote_average * 10} % </p>
+                                                    <span>Release Date : {trend.release_date}</span>
                                                 </div>
                                             </div>
                                         )
@@ -244,12 +247,12 @@ class Movie extends Component {
                                                 </div>
 
                                                 <h4>{trend.title || trend.original_name}</h4>
-                                                <div>
-                                                    <span className="star">
+                                                <div className="movie_details">
+                                                    <code className="star">
                                                         <i class="fa fa-star" aria-hidden="true"></i>
-                                                    </span>
-                                                    <span>{trend.vote_average * 10} % </span>
-                                                    <span>{trend.release_date}</span>
+                                                    </code>
+                                                    <p>Rating : {trend.vote_average * 10} % </p>
+                                                    <span>Release Date : {trend.release_date}</span>
                                                 </div>
                                             </div>
                                         )

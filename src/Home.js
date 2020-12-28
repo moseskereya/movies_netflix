@@ -5,6 +5,7 @@ import { Provider } from "./Components/context"
 import Show from "./Components/Show"
 import Detail from "./Components/MovieDetail"
 import Nav from './Components/Nav';
+import Banner from "./Banner"
 
 
 function Home() {
@@ -16,7 +17,8 @@ function Home() {
                         <Nav />
                         <hr />
                         <Switch>
-                            <Route exact path="/" component={Movie} />
+                            <Route exact path="/" component={Banner} />
+                            <Route path="/Movies" component={Movie} />
                             <Route exact path="/Shows" component={Show} />
                             <Route path="/Movie/:Id" component={Detail} />
                         </Switch>

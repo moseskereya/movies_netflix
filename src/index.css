@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.movie_details span:nth-child(0){
+color: #222121;
+}
+.front_view{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px){
+   html, body{
+       font-size: 12px;
+   }
+    .front_view{
+        flex-direction: column;
+    }
+}

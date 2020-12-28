@@ -33,7 +33,6 @@ html {
     font-family: var(--main-font);
     font-size: 14px;
     color: var(--main-color);
-    background-color:#25222e;
     scroll-behavior: smooth;
 }
 
@@ -68,13 +67,13 @@ nav ul li{
      color: orange;
 }
 .link{
-    color: #e2e2e2;
+    color: orange;
     text-decoration: none;
     transition: .5s ease-in-out;
+    font-weight: 500;
 }
 .link:hover {
-    color: orange;
-
+    color: rgb(61, 60, 59);
 }
 .show{
     display: flex;
@@ -82,8 +81,17 @@ nav ul li{
     align-items: center;
     height: 80vh;
 }
+
+.banners{
+ height: 100vh;
+ background-position: center;
+ display: flex;
+ justify-content: center;
+ filter: grayscale(0);
+ align-items: center;
+}
+
 .search input{
-    border: none;
     padding: 6px;
     margin: 3px;
     width: 150px;
@@ -120,7 +128,6 @@ nav ul li{
     box-sizing:border-box;
 }
   
-
   .movies_items .box .imgBox img{
     width: 100%;
     transition:transform 2s;
@@ -141,11 +148,18 @@ nav ul li{
 }
 .movies_items img:hover{
     opacity: .5;
-    color: #919090;
+    color: #1f1e1e;
+}
+
+.movie_details p {
+    color: var(--main-font-color-dark);
+}
+.movie_details span{
+    color: #2a2b31;
 }
 .movies_items h4{
     margin: 3px 0;
-    color: rgb(189, 184, 184);
+    color:#2a2b31;
     text-transform: uppercase;
 }
 .collection_title{
@@ -161,6 +175,9 @@ nav ul li{
 
 span{
     margin: 4px;
+}
+.view-detail2 {
+    color: var(--body-font-color);
 }
 .detail{
     display: grid;
@@ -194,10 +211,10 @@ span{
     margin-top: 10px;
 }
 .play{
-    background-color: rgb(185, 53, 35);
+    background-color: rgb(90, 36, 52);
     padding: 14px 14px;
     border:none;
-    margin: 3rem 0;
+    margin: 3rem 1rem;
     text-align: center;
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -218,9 +235,8 @@ span{
     color: #fff;
 }
 .play:hover{
-    border:none;
-    margin: 3rem 0;
-      background-color: orange;
+    margin: 3rem 1rem;
+    background-color: orange;
 }
 .title_cats{
     margin-left: 2rem;
@@ -234,11 +250,10 @@ span{
 .fa{
     padding: 5px 0;
     text-align: center;
-    color: white;
+    color: rgb(236, 236, 236);
 }
 .link_back{
    padding-top: 2rem;
-    color: white;
     float: right;
 }
 .container{
@@ -319,6 +334,9 @@ grid-template-columns:repeat(2, 1fr);
     nav ul li{
         padding: .5rem 0;
     }
+    .banners {
+        height:90vh;
+    }
 }
 .showcase {
     width: 100%;
@@ -389,7 +407,7 @@ grid-template-columns:repeat(2, 1fr);
 
 .showcase-content p {
 	text-transform: uppercase;
-	color: #fff;
+	color: rgb(26, 25, 25);
 	font-weight: 400;
 	font-size: 1.9rem;
 	line-height: 1.25;
@@ -400,9 +418,11 @@ grid-template-columns:repeat(2, 1fr);
 .footer{
     display: flex;
     justify-content: space-around;
-    margin-top: 3rem ;
-    align-items: center;
+    margin: 0;
+    padding: 1rem;
     background-color: #2a2b31;
+    align-items: center;
+    color: #dbdbdb;
 }
 
 
@@ -454,7 +474,7 @@ grid-template-columns:repeat(2, 1fr);
 		font-size: 1.2rem;
 	}
 }
-
+ 
 @media (max-width: 700px) {
 	.showcase::after {
 		background: rgba(0, 0, 0, 0.6);
@@ -480,5 +500,5 @@ grid-template-columns:repeat(2, 1fr);
 @media(max-height: 600px) {
   .showcase-content {
     margin-top: 3rem;
-}
+ }
 }

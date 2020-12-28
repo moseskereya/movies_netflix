@@ -29,7 +29,6 @@ class searches extends Component {
             })
     }
 
-    
 
     render() {
         const search_item = this.state.title

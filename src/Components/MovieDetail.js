@@ -19,8 +19,7 @@ class MovieDetail extends Component {
             .catch(error => {
                 console.log(error, "There is no data from the movie db")
             })
-    }
-
+       }
 
     render() {
         const data = this.state.movie;
@@ -36,21 +35,21 @@ class MovieDetail extends Component {
                                 alt="img" />
                         </div>
                         <div className="view-detail2">
-                            <h1 className="title">{data.title}</h1>
+                            <h1 className="title">Movie Name: {data.title}</h1>
                             <span className="star">
                                 <i class="fa fa-star" aria-hidden="true"></i>
                             </span>
 
                             <span>
-                                {data.vote_average * 10} %
-                    </span>
+                                  Rating {data.vote_average * 10} %
+                           </span>
                             <br />
 
-                            <span> Release Date  |</span>
+                            <span> Release Date |</span>
                             <br />
 
                             <span className="date">
-                                {data.release_date}
+                               Release Date {data.release_date}
                             </span>
                             <p className="overview">{data.overview}</p>
                             <div className="feature">
@@ -67,7 +66,7 @@ class MovieDetail extends Component {
                                         <a key={video.key} href={`https://www.youtube.com/watch?v=${video.key}`} className="play">
                                             <i class="fa fa-play" aria-hidden="true"></i>
                                             || Play Trailler
-                                </a>
+                                      </a>
                                     )}
 
                                 </div>
