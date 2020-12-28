@@ -148,8 +148,8 @@ class Movie extends Component {
                                                     <div class="imgBox">
                                                         <Link to={
                                                             {
-                                                                pathname: `/Movie/${trend.id}`,
-                                                                state: { movie: trend.id }
+                                                                pathname:`/Movie/${trend.id}`,
+                                                                state: {movie: trend.id }
                                                             }}>
                                                             <img src={`${baseUrl}/${trend.backdrop_path}`} alt="movie_img" />
                                                         </Link>
