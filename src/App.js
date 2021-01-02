@@ -6,9 +6,9 @@ import Home from "./Home"
 function App() {
     return (
         <React.Fragment>
-            <Home />
-            <hr />
-            <Footer />
+             <Home />
+                <hr />
+             <Footer />
         </React.Fragment>
     );
 }
