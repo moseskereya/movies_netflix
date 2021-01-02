@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/movies_netflix/static/css/main.dcae63a3.chunk.css",
+    "main.js": "/movies_netflix/static/js/main.4c8f397d.chunk.js",
+    "main.js.map": "/movies_netflix/static/js/main.4c8f397d.chunk.js.map",
+    "runtime-main.js": "/movies_netflix/static/js/runtime-main.1c82af99.js",
+    "runtime-main.js.map": "/movies_netflix/static/js/runtime-main.1c82af99.js.map",
+    "static/js/2.90be7543.chunk.js": "/movies_netflix/static/js/2.90be7543.chunk.js",
+    "static/js/2.90be7543.chunk.js.map": "/movies_netflix/static/js/2.90be7543.chunk.js.map",
+    "index.html": "/movies_netflix/index.html",
+    "precache-manifest.6f9421abbdc01aca67463882a0b6f334.js": "/movies_netflix/precache-manifest.6f9421abbdc01aca67463882a0b6f334.js",
+    "service-worker.js": "/movies_netflix/service-worker.js",
+    "static/css/main.dcae63a3.chunk.css.map": "/movies_netflix/static/css/main.dcae63a3.chunk.css.map",
+    "static/js/2.90be7543.chunk.js.LICENSE.txt": "/movies_netflix/static/js/2.90be7543.chunk.js.LICENSE.txt",
+    "static/media/user.jpg": "/movies_netflix/static/media/user.14fbc449.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1c82af99.js",
+    "static/js/2.90be7543.chunk.js",
+    "static/css/main.dcae63a3.chunk.css",
+    "static/js/main.4c8f397d.chunk.js"
+  ]
+}
