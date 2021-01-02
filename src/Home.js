@@ -1,6 +1,6 @@
 import React from 'react'
 import Movie from './Components/Movie';
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import {HashRouter as Router, Route, Switch } from 'react-router-dom';
 import { Provider } from "./Components/context"
 import Show from "./Components/Show"
 import Detail from "./Components/MovieDetail"
