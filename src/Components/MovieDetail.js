@@ -77,7 +77,7 @@ class MovieDetail extends Component {
                                         )
                                     })}
                                 </div>
-                                <Link className="link_back" to="/Movies">Back to Movies</Link>
+                                <Link className="link_back" to="/movies">Back to Movies</Link>
                             </div>
                         </div>
                     </div>

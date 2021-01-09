@@ -16,10 +16,10 @@ class Nav extends Component {
                 </div>
                 <ul>
                     <li>
-                        <Link className="link" to="/Home">Home</Link>
+                        <Link className="link" to="/">Home</Link>
                     </li>
                     <li>
-                        <Link className="link" to="/Movies">Movies</Link>
+                        <Link className="link" to="/movies">Movies</Link>
                     </li>
                     <li>
                         <Link className="link" to="/Shows">TV Shows</Link>
