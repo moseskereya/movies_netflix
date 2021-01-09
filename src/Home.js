@@ -1,6 +1,6 @@
 import React from 'react'
 import Movie from './Components/Movie';
-import {HashRouter as Router, Route, Switch } from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Provider } from "./Components/context"
 import Show from "./Components/Show"
 import Detail from "./Components/MovieDetail"
@@ -17,7 +17,7 @@ function Home() {
                         <Nav />
                         <hr />
                         <Switch>
-                            <Route exact path="/" component={Banner} />
+                            <Route exact path="/Home" component={Banner} />
                             <Route path="/Movies" component={Movie} />
                             <Route exact path="/Shows" component={Show} />
                             <Route path="/Movie/:Id" component={Detail} />
